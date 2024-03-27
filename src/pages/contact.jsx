@@ -16,9 +16,9 @@ const Contact = () => {
       <Header />
       <Top data={data} />
 
-      <Box className="form">
-        <Grid container className="pa" >
-          <Grid item xs={11} md={8.5} > 
+      <Box className="form" sx={{width :{xs :"90vw",md : "70vw"}}}>
+        <Grid container className="pa" sx={{width :"100%"}} >
+          <Grid item xs={12} md={8.5} > 
             <form >
               <h2>Send us a message</h2>
               <p>
@@ -59,7 +59,7 @@ const Contact = () => {
               </Grid>
             </form>
           </Grid>
-          <Grid item xs={11} md={3.5} className="back" >
+          <Grid item xs={12} md={3.5} className="back" >
             <h2>Contact Information</h2>
 
             <Box className="itemscon">

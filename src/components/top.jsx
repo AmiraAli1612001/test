@@ -3,6 +3,8 @@ import React from "react";
 import Header from "./Header";
 import { Link, useNavigate } from "react-router-dom";
 import ArrowForwardIosIcon from "@mui/icons-material/ArrowForwardIos";
+import { HashLink } from "react-router-hash-link";
+import { Translate } from "@mui/icons-material";
 
 const Top = (props) => {
   let navigate = useNavigate()
@@ -14,24 +16,25 @@ const Top = (props) => {
         <Grid
           container
           className="home-container"
-          sx={{width:{xs :"90vw" , md :"80vw"}}}
+          sx={{width:{xs :"90vw" , md :"80vw"}, textAlign :{xs :"center" , md :"start"}}}
         >
           <Grid
             item
-            xs={10}
+            xs={11}
             md={6}
             lg={6}
             className="title"
-            // sx={{margin : {xs : "0px" , md : "0px 100px"}}}
+
+            sx={{transform : "translateY(-30px)"}}
           >
             <h1>{props.data.h1}</h1>
             <p style={{color:"#ffffffb9"}} className="p-after">{props.data.p}</p>
             <p style={{color:"#ffffffb9"}}>{props.data.p2}</p>
 
-            <Link  to={props.data.path}>
+            <HashLink smooth="true" to={props.data.path}  sx={{textAlign :"center" , display :{xs :"block" , md :"inline-block"} , margin:"auto"}}>
               {props.data.link}
-              <ArrowForwardIosIcon />
-            </Link>
+              {/* <ArrowForwardIosIcon /> */}
+            </HashLink>
           </Grid>
           <Grid item xs ={10} md={5} sx={{display :{xs:"none" , md :"flex"} , justifyContent :"flex-end" , alignItems :"center"}}>
             <CardMedia component="img" image={props.data.img} sx={{width :{md :"400px", lg : "450px"}}} />

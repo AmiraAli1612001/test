@@ -3,11 +3,11 @@ import React from "react";
 
 const Modern = () => {
   return (
-    <Box className="modern">
+    <Box className="modern"  id="modern" sx={{zIndex:"1"}}>
       <Box className="modern-container">
-        <Box className="box">
+        <Box className="box" >
           <Grid container className="container">
-            <Grid item xs={10} md={3.5}>
+            <Grid item xs={10} md={3.5} >
               <svg
                 id="a2d2084d-cc5f-432b-8463-023a9288d7f4"
                 data-name="Layer 1"

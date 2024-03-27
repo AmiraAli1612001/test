@@ -1,8 +1,8 @@
 {
   "name": "third-project",
-  "homepage": "https://AmiraAli1612001.github.io/fo",
   "version": "0.1.0",
   "private": true,
+  "homepage": "https://AmiraAli1612001.github.io/amira-2",
   "dependencies": {
     "@emotion/react": "^11.11.4",
     "@emotion/styled": "^11.11.0",
@@ -17,6 +17,7 @@
     "react-dom": "^18.2.0",
     "react-multi-carousel": "^2.8.4",
     "react-router-dom": "^6.22.3",
+    "react-router-hash-link": "^2.4.3",
     "react-scripts": "5.0.1",
     "react-swipeable-views-react-18-fix": "^0.14.1",
     "styled-components": "^6.1.8",

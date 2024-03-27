@@ -5,10 +5,10 @@
   font-family: Tajawal, sans-serif;
 }
 
-.home
-.css-1f125t4-MuiGrid-root {
+.home .css-1f125t4-MuiGrid-root {
   margin-top: 0px !important;
 }
+
 .relative-link {
   position: relative;
   transition: 0.5s;
@@ -205,7 +205,7 @@ body {
 .footer {
   position: relative;
   padding: 150px 0px 20px 0px;
-  margin-top: 200px;
+  margin-top: 100px;
   background-color: #141c27;
   background-image: -webkit-linear-gradient(45deg, #141c27, #233249);
 }
@@ -270,6 +270,8 @@ body {
   margin-left: 10px;
   margin-bottom: 10px;
   min-width: 35px;
+  max-width: 250px;
+
   text-align: center;
   border-radius: 2px;
   transition: all 0.3s ease-in-out;
@@ -325,7 +327,6 @@ body {
 /* home style */
 .home {
   position: relative;
-  
 }
 .home,
 .home-container {
@@ -336,13 +337,13 @@ body {
   justify-content: center;
   /* position: relative; */
   height: 110vh;
-  z-index: 0  !important;
+  z-index: 0 !important;
   gap: 50px;
   /* margin-top: 75px; */
 }
 .home img {
- /* height: 400px; */
-  margin:  auto !important;
+  /* height: 400px; */
+  margin: auto !important;
   z-index: 1000;
   position: relative;
   top: 50px;
@@ -359,15 +360,17 @@ body {
   margin-bottom: 20px;
   line-height: 25px;
 }
+.ready .container a {
+  border-radius: 0px !important;
+}
 .home a,
 .ready .container a {
   color: white;
   text-decoration: none;
-  display: flex;
-  align-items: center;
   transition: 0.5s;
   position: relative;
   width: 180px;
+  display: inline-block;
   justify-content: flex-end !important;
   align-content: center !important;
   background-color: rgba(0, 0, 0, 0.642);
@@ -376,11 +379,10 @@ body {
   border-radius: 30px;
 }
 .home a:hover,
-.ready .container a :hover
-.services-container .item a:hover {
- background-color: white  ;
- border: 2px solid black;
- color: black;
+.ready .container a :hover .services-container .item a:hover {
+  background-color: white;
+  color: black;
+  scale: 1.1;
 }
 .services-container {
   padding-bottom: 100px;
@@ -413,7 +415,8 @@ body {
 } */
 
 .ready .container a:hover {
-  transform: translateX(10px);
+  /* transform: translateX(10px); */
+  scale: 1.1;
   transition: 0.5s;
 }
 .home a:hover::after,
@@ -480,7 +483,7 @@ body {
   font-size: 30px;
   margin-top: 200px;
   padding-top: 50px;
-  padding-bottom:50px ;
+  padding-bottom: 50px;
   padding-left: 10px;
 }
 .sevices svg {
@@ -651,7 +654,8 @@ transition: opacity .3s; */
   min-height: 95vh !important;
   background-image: linear-gradient(45deg, #141c27, #233249);
   position: relative;
-  z-index: 10000;
+  z-index: 0;
+  padding-top: 30px;
 }
 .choice::before {
   content: "";
@@ -660,10 +664,10 @@ transition: opacity .3s; */
   bottom: 0;
   transform: skewY(-177deg);
   width: 100%;
-  z-index: 2;
+  z-index: -1;
   background: #f7f8fb none repeat scroll 0 0;
   height: 15%;
-  bottom: 93%;
+  bottom: 99%;
 }
 .choice::after {
   content: "";
@@ -672,10 +676,10 @@ transition: opacity .3s; */
   bottom: 0;
   transform: skewY(-177deg);
   width: 100%;
-  z-index: 2;
+  z-index: -1;
   background: #f7f8fb none repeat scroll 0 0;
   height: 15%;
-  top: 93%;
+  top: 95%;
 }
 .choice .container {
   display: flex;
@@ -710,7 +714,7 @@ transition: opacity .3s; */
 
 /* facts style */
 .facts {
-  padding: 180px 30px;
+  padding: 30px;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -728,6 +732,7 @@ transition: opacity .3s; */
   display: flex;
   justify-content: center;
   align-items: center;
+  z-index: 0 !important;
 }
 .facts .images img {
   width: 100px;
@@ -951,19 +956,22 @@ transition: opacity .3s; */
   transform: translateY(50%);
   z-index: 1000;
   animation: svg 3s infinite;
+  min-width: 35px;
+  max-width: 300px;
 }
 .css-1v8vcfu {
-
-  margin-top: 130px !important ;
+  /* margin-top: 130px !important ; */
+  margin-top: 30px !important;
 }
 
 .projects .container .row-project {
   display: flex;
   justify-content: center;
+  position: relative;
   gap: 50px;
   min-height: 100vh;
   padding: 20px 0px 50px 0px;
-  z-index: 1000;
+  z-index: 0;
 }
 .container .our {
   padding: 0px 150px;
@@ -1009,6 +1017,10 @@ transition: opacity .3s; */
 }
 
 /* web style */
+.web .home-container {
+  justify-content: space-around;
+}
+
 .web .home-container .item {
   position: relative;
 }
@@ -1021,34 +1033,46 @@ transition: opacity .3s; */
 .ssl .home-container img {
   /* position: absolute; */
   width: 670px !important;
-  transform: translateX(40px) ;
+  transform: translateX(40px);
   z-index: -1;
 }
 .web .home-container img:hover {
   scale: 1;
 }
 /* style modern  */
-@media only screen and (max-width :700px) {
+
+@media only screen and (max-width: 700px) {
+  .domains p,
+  .domains h2,
+  .transfer h2,
+  .transfer p {
+    text-align: center;
+  }
   .modern svg {
     max-width: 340px;
   }
 }
 .modern {
-  padding-bottom: 180px;
+  /* padding-bottom: 180px; */
+  z-index: 1 !important;
+  position: relative;
   min-height: 100vh;
 }
 .modern .container {
   display: flex;
   justify-content: center;
   align-items: center;
+  z-index: 0 !important;
   gap: 50px;
 }
 .modern-container {
-  margin-top: 200px;
+  /* margin-top: 200px; */
+  z-index: 0 !important;
 }
 .modern .container svg {
   width: 400px;
   height: 400px;
+  z-index: 0 !important;
   display: block;
 }
 .modern h2 {
@@ -1099,37 +1123,46 @@ transition: opacity .3s; */
 .modern-domain p {
   line-height: 25px;
 }
+.transfer .home-container a {
+  display: none;
+}
 .domains .search {
-  margin-top: 200px;
+  /* margin-top: 200px; */
+  position: relative;
+  z-index: 0;
   display: flex;
   justify-content: center;
+  margin-top: 50px;
   align-items: center;
   flex-direction: column;
 }
 
 .domains h2 {
   color: #888;
+  padding: 10px;
 }
 .domains p {
   color: #aaa;
   margin-top: 20px;
   margin-bottom: 30px;
+  padding: 10px;
 }
 .domains .form {
   background-color: white;
   padding: 50px 20px;
   border-radius: 20px;
-  position: relative;
+  /* position: relative; */
   display: flex;
   justify-content: center;
   align-items: center;
   flex-direction: column;
 }
 .domains .form form {
-  width: 100%
+  width: 100%;
+  position: relative;
 }
 .domains .form input {
-  width:  90%;
+  width: 90%;
   padding: 12px;
   font-size: 20px;
   border-radius: 4px;
@@ -1154,14 +1187,16 @@ transition: opacity .3s; */
 .domains .form button {
   position: absolute;
   min-width: 100px;
-  height: 48px;
+  height: 100%;
   border-radius: 0px 4px 4px 0px;
   cursor: pointer;
   background-image: linear-gradient(5deg, #008cff, #00c0e2);
   border: none;
   color: white;
-  transform: translateX(-65%);
+  right: 0px;
+  /* transform: translateX(-65%); */
   font-size: 15px;
+  top: 0px;
 }
 .domains .text .gray {
   color: #999;
@@ -1226,7 +1261,9 @@ transition: opacity .3s; */
   display: none;
 }
 .our-plan {
-  margin-top: 180px;
+  /* margin-top: 180px; */
+  position: relative;
+  z-index: 0;
 }
 .our-plan h2,
 .ssl h2 {
@@ -1460,18 +1497,22 @@ b {
 }
 .contact .form {
   display: flex;
+  margin: auto;
   justify-content: space-between;
-  position: absolute;
+  position: relative !important;
   background-color: white;
-  left: 50%;
-  transform: translate(-50%, -30%);
+  /* left: 50%; */
+  transform: translateY(-150px) !important;
   border-radius: 20px;
-  width: 70vw;
+  padding-right: 0px;
 }
 .contact form h2 {
   font-size: 22px;
   color: #6a6a81;
   margin-bottom: 20px;
+}
+.contact form {
+  padding-right: 0px !important;
 }
 .contact form p {
   color: #555;
@@ -1517,6 +1558,10 @@ b {
   -moz-appearance: none;
   appearance: none;
   color: #777;
+}
+.leftContent .appsdevtext .realcon .percon.first .formcon {
+  padding-left: 0px !important;
+  padding-right: 0px !important;
 }
 .contact form input[type="submit"] {
   background-image: linear-gradient(45deg, #141c27, #233249);
@@ -1603,10 +1648,8 @@ b {
   font-family: Tajwal;
   line-height: 25px;
 }
-.contact  {
-  background-image: -webkit-linear-gradient(45deg, #008cff, #0082ec);
+.contact {
   position: relative;
-  height: 70vh;
 }
 .contact .effect {
   display: none;
@@ -1624,6 +1667,10 @@ b {
 }
 .contact .form .pa form {
   padding: 30px;
+}
+.contact .home-container,
+.contact .home {
+  height: 88vh !important;
 }
 .contact .home-container a {
   display: none;
