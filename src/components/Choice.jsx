@@ -28,7 +28,7 @@ const Choice = () => {
     { icon: robot, text: "Multiple payment methods for everyone" },
   ];
   return (
-    <Box className="choice">
+    <Box className="choice" sx={{padding :{xs :"30px 10px" , md :"180px 30px"}}}>
       <Grid container className="container">
         <Grid item xs={10} lg={4.5}>
           <h2>Why GRE is our best choice?</h2>

@@ -479,6 +479,9 @@ body {
 
   font-size: 30px;
   margin-top: 200px;
+  padding-top: 50px;
+  padding-bottom:50px ;
+  padding-left: 10px;
 }
 .sevices svg {
   width: 60px;
@@ -646,7 +649,6 @@ transition: opacity .3s; */
   justify-content: center;
   align-items: center;
   min-height: 95vh !important;
-  padding: 180px 30px;
   background-image: linear-gradient(45deg, #141c27, #233249);
   position: relative;
   z-index: 10000;
@@ -1601,10 +1603,13 @@ b {
   font-family: Tajwal;
   line-height: 25px;
 }
-.contact .home-container {
+.contact  {
   background-image: -webkit-linear-gradient(45deg, #008cff, #0082ec);
   position: relative;
-  height: 650px;
+  height: 70vh;
+}
+.contact .effect {
+  display: none;
 }
 .contact .title {
   width: 100% !important;
@@ -1619,6 +1624,9 @@ b {
 }
 .contact .form .pa form {
   padding: 30px;
+}
+.contact .home-container a {
+  display: none;
 }
 /* tabs */
 .css-1h9z7r5-MuiButtonBase-root-MuiTab-root.Mui-selected {

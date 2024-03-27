@@ -801,7 +801,7 @@ const Services = () => {
   ];
   return (
     <Box className="sevices">
-      <h2 style={{ margin: "50px 175px", textAlign: { xs: "center" } }}>
+      <h2 style={{ width :"77vw", textAlign :{xs :"center",md:"start"},margin:"auto", textAlign: { xs: "center" } }}>
         Our Services
       </h2>
 
