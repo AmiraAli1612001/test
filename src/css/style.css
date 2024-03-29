@@ -1158,22 +1158,24 @@ transition: opacity .3s; */
   flex-direction: column;
 }
 .domains .form form {
-  width: 100%;
+  width: 90%;
+  margin: auto;
   position: relative;
 }
 .domains .form input {
-  width: 90%;
+  width: 100%;
   padding: 12px;
   font-size: 20px;
   border-radius: 4px;
   /* display: block; */
-  transform: translate(5%);
   margin: auto;
   color: #aaa;
   border: none;
   outline: none;
   border: 1px solid #888;
   margin: auto;
+  margin-left: 0px;
+  box-sizing: border-box;
 }
 .domains .text {
   margin: auto;

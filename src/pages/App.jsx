@@ -14,6 +14,8 @@ const App = () => {
         p: " Creating a mobile application for your business is the most important thing to do for being a well-known brand, so let's take a tour of our work in this field",
         link: "Learn more",
         img: mobile,
+        path : "/App-developments/#modern"
+
       };
     return (
         <Box className="app">
